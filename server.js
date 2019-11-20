@@ -77,7 +77,10 @@ app.get('/', function (req, res) {
    res.render('index.html');
 });
 
-
+app.post('/', function (req, res) {
+  
+  res.render('home.html');  
+});
 
 // error handling
 app.use(function(err, req, res, next){
